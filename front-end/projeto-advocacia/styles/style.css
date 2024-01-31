@@ -1,0 +1,56 @@
+body {
+    font-family: Fredoka, sans-serif;
+}
+
+.secao-top {
+    border-bottom: 1px solid #d5d5d5;
+}
+.secao-limite {
+    width: 800px;
+    margin: 0 auto;
+}
+.secao-top p {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+h1, h2, h3 {
+    margin: 0;
+}
+.parallax-topo {
+    min-height: 500px;
+    background-image: url("../images/capa.jpg");
+    background-size: cover;
+}
+.parallax-conteudo {
+    text-align: right;
+    padding: 50px 20px;
+}
+.secao-conteudo {
+    padding: 50px 20px;
+    line-height: 25px;
+}
+.img-conteudo {
+    width: 250px;
+    height: 180px;
+}
+.secao-conteudo span {
+    border-left: 1px solid #000;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.parallax-divisao {
+    padding: 50px 0;
+    text-align: center;
+    background-image: url("../images/fundo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-divisao h3{
+    font-size: 36px;
+    background-color: #fff;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
