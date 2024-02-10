@@ -34,7 +34,7 @@ body {
     max-width: 260px;
     color: #3c184e;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .logo .logo-top {
