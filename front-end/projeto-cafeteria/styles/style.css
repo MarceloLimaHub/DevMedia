@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topo {
+    width: 100%;
+    background-color: #604829;
+    font-family: 'Oswald', sans-serif;
+    position: fixed;
+    z-index: 1;
+}
+
+.topo img{
+    width: 80px;
+    position: relative;
+    left: 15%;
+}
+
+.links-topo {
+    position: absolute;
+    right: 15%;
+    top: 29%;
+}
+
+.links-topo a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #c4a47c;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-right: 20px;
+    text-shadow: 3px 5px 2px #000;
+}
+
+.banner, .informacoes .container-imagem, .horarios, .contatos {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    background-image: url("../images/parallax-imagem1.png");
+    height: 100vh;
+}
+
+.banner h1 {
+    color: #fff;
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+}
+
+.informacoes {
+    width: 100%;
+}
+
+.informacoes .container-texto {
+    text-align: center;
+    color: #666;
+    padding: 80px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: 0 auto;
+}
+
+.container-texto h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #c4a47c;
+    font-size: 24px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.container-texto p {
+    font-family: 'Lato';
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.container-imagem {
+    height: 50vh;
+}
+
+.img1 {
+    background-image: url('../images/parallax-imagem2.jpg');
+}
+
+.img2 {
+    background-image: url('../images/parallax-imagem3.jpg');
+}
+
+.container-imagem h3 {
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px;
+    width: 500px;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #604829;
+}
+
+.contatos {
+    height: 100vh;
+    background-image: url('../images/parallax-imagem4.png');
+    text-align: center;
+}
