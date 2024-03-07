@@ -4,3 +4,154 @@
     box-sizing: border-box;
     font-family: "Poppins" ,sans-serif;
 }
+
+.secao-limite {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.topo {
+    background-color: #2f86d6;
+}
+
+.container-topo {
+    position: relative;
+    padding: 35px 0px;
+}
+
+.logo-topo {
+    position: relative;
+}
+
+.logo-topo div {
+    position: absolute;
+    top: 0;
+    left: 95px;
+}
+
+.logo-topo img {
+    width: 80px;
+}
+
+.logo-topo p {
+    color: #fff;
+    font-weight: 600;
+}
+
+.container-topo .links-topo {
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+.links-topo a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.container-principal {
+    padding: 100px 0;
+}
+
+.container-principal table {
+    margin: auto;
+}
+
+.container-principal thead th {
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.container-principal thead th, .container-principal tbody .coluna-servico {
+    background-color: #f1f3f7;
+}
+
+.container-principal thead p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a8a4a4;
+}
+
+.container-principal thead h3 {
+    font-size: 36px;
+}
+
+.container-principal thead .celula-invisivel {
+    visibility: hidden;
+}
+
+.container-principal tbody td {
+    padding:20px 40px;
+    text-align: center;
+    border-right: 1px solid #f1f3f7;
+    border-bottom: 1px solid #f1f3f7;
+}
+
+.container-principal tbody .coluna-servico {
+    font-weight: 500;
+    text-align: left;
+}
+
+.container-principal tbody .circulo-azul {
+    width: 20px;
+    height: 20px;
+    background-color: #2f86d6;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.rodape {
+    background-color: #2f86d6;
+    padding-top: 70px;
+}
+
+.logo-rodape img {
+    width: 80px;
+}
+
+.logo-rodape {
+    width: 320px;
+    position: relative;
+    margin: auto;
+
+}
+
+.logo-rodape .txt-logo {
+    position: absolute;
+    top: 0;
+    left: 95px;  
+}
+
+.logo-rodape p {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-size: 16px;
+}
+
+.rodape .paragrafo-rodape {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 65px;
+    text-align: center;
+}
+
+.container-copyright {
+    text-align: center;
+    background-color: #f1f3f7;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-copyright a {
+    text-decoration: none;
+    color: #2f86d6;
+    position: relative;
+
+}

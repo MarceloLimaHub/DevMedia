@@ -295,3 +295,48 @@ html {
     box-shadow: 2px 2px 5px #303030;
 }
 
+.logo-rodape img {
+    width: 80px;
+}
+
+.logo-rodape {
+    width: 320px;
+    position: relative;
+    margin: 70px auto 40px;
+
+}
+
+.logo-rodape .txt-logo {
+    position: absolute;
+    top: 0;
+    left: 95px;  
+}
+
+.logo-rodape p {
+    color: #2f86d6;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.container-contatos {
+    text-align: center;
+    line-height: 40px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.container-copyright {
+    text-align: center;
+    background-color: #f1f3f7;
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.container-copyright a {
+    text-decoration: none;
+    color: #2f86d6;
+    position: relative;
+
+}
