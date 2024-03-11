@@ -17,41 +17,50 @@ html {
 }
 
 .container-topo {
-    position: relative;
-    padding: 35px 0px;
+    background-color: white;
+    padding: 35px 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo-topo {
-    position: relative;
+    width: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo-topo div {
-    position: absolute;
-    top: 0;
-    left: 95px;
+.logo-topo .logo-img {
+    width: 100px;
+    height: 100px;
 }
 
 .logo-topo img {
-    width: 80px;
+    width: 100%;
+    height: 100%;
 }
 
 .logo-topo p {
-    color: #2f86d6;
+    font-size: 12px;
     font-weight: 600;
+    color: #2f86d6;
 }
 
 .container-topo .links-topo {
-    position: absolute;
-    top: 65px;
-    right: 0;
+    width: 385px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .links-topo a {
-    font-size: 18px;
+    font-weight: 600;
     text-decoration: none;
     color: #233032;
-    font-weight: 600;
-    padding: 0 10px;
 }
 
 .secao-banner {
@@ -59,19 +68,25 @@ html {
 }
 
 .container-banner {
-    position: relative;
-    padding: 180px 0px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container-banner .banner-texto {
     color: #fff;
-    width: 470px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 300px;
+    gap: 20px;
 }
 
 .container-banner .banner-texto p {
     line-height: 26px;
     font-size: 16px;
-    word-spacing: 3px;
 }
 
 .container-banner .banner-texto h2 {
@@ -81,10 +96,7 @@ html {
 }
 
 .container-banner img {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 100px;
+    flex: 1 1 468px;
 }
 
 .anuncio-home1 {
@@ -94,11 +106,14 @@ html {
 
 .container-anuncio1 {
     padding: 40px 0;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .container-anuncio1 .anuncio-texto {
-    width: 600px;
+    flex: 1 1 468px;
 }
 
 .container-anuncio1 .anuncio-texto h2 {
@@ -113,41 +128,43 @@ html {
     font-size: 18px;
     font-weight: 700;
     word-spacing: 3px;
-    position: absolute;
-    right: 0;
-    top: 40px;
     text-align: center;
     cursor: pointer;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
 }
 
-.container-anuncio1 a span {
-    margin-left: 30px;
+.anuncio-home1 a img {
+    width: 20px;
 }
 
 .container-anuncio1 a:hover{
     transform: scale(1.1);
-    transition: ease-in-out .3s ;
+    animation: inFocus .3s;
     box-shadow: 2px 2px 5px #252525;
 }
 
-.container-anuncio1 a img {
-    width: 20px;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    margin-left: 20px;
+@keyframes inFocus {
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
 }
 
 .secao-informacoes {
-    text-align: center;
     padding: 100px 0;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .secao-informacoes  h2{
     font-size: 32px;
-    width: 900px;
+    flex: 0 1 100%;
     margin: 0 auto 60px;
+    text-align: center;
 }
 
 .secao-informacoes h2 span {
@@ -155,40 +172,42 @@ html {
 }
 
 .container-informacoes {
-    height: 240px;
-    position: relative;
+    height: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
 }
 
-.container-informacoes div {
-    width: 33%;
-    position: absolute;
-    top: 0;
-}
 
 .container-informacoes div img {
     width: 100px;
 }
 
-.card1 {
-    left: 0;
+.container-informacoes .card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.card2 {
-    left: 343px;
-    border-inline: 1px solid #42424231;
-}
-
-.container-informacoes .card3 {
-    right: 0;
-}
-
-.container-informacoes div h3 {
-    margin: 20px;
+.card p {
+    margin: 0 30px;
 }
 
 .secao-planos {
     padding: 100px 0px;
     background-color: #f1f3f7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .secao-planos h2 {
@@ -204,7 +223,7 @@ html {
 .secao-planos table {
     border-radius: 4px;
     margin: auto;
-    box-shadow: 0 2px 20px 15px #2f85d66b
+    box-shadow: 0 2px 20px 15px #2f85d66b;
 }
 
 .secao-planos table thead th img {
