@@ -1,5 +1,8 @@
 * {
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau Infant", sans-serif;
 }
 
 :root {
@@ -7,6 +10,164 @@
     --corDegrade2: #009c3b;
 }
 
-body {
-    background-color: var(--corDegrade1);
+.secao-banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secao-banner video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.container-info {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.box-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-perfil .img-perfil {
+    width: 200px;
+    height: 200px;
+    background: url('../assets/neymar.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-perfil::before {
+    content: "";
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(90deg, var(--corDegrade1), var(--corDegrade2));
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.box-perfil h1 {
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    text-shadow: 3px 6px 1px #000000;
+}
+
+.box-perfil h1::before {
+    content: "";
+    position: absolute;
+    padding: 0;
+    bottom: 3px;
+    left: 4px;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--corDegrade1), var(--corDegrade2));
+    border-radius: 4px 1px 1px 4px;
+}
+
+.box-perfil h1::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url('../assets/verificado.png');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: 12px;
+    right: -20px;
+}
+
+.container-links {
+    width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-links a img {
+    width: 30px;
+}
+
+.container-links a {
+    background: #0200006e;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-family: "Ysabeau Infant", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container-links a:hover {
+    color: #000;
+    background: #fff;
+    transition: all .5s;
+}
+
+.container-links a p {
+    width: 90%;
+}
+
+.secao-estatisticas {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: url('../assets/imagem-de-fundo.jpg');
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: 'Monstserrat', sans-serif;
+}
+
+.secao-estatisticas h2 {
+    font-size: 74px;
+    color: #fff;
+    text-shadow: 3px 6px 1px #000000;
+}
+
+.secao-estatisticas table tbody img {
+    width: 30px;
+}
+
+.secao-estatisticas table th {
+    font-size: 26px;
+    background-color: #000000cc;
+    color: #ffff;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.tabela th, tr, td {
+    padding: 20px;
 }
