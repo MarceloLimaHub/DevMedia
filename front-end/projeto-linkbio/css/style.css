@@ -1,0 +1,12 @@
+* {
+
+}
+
+:root {
+    --corDegrade1: #ffdf00;
+    --corDegrade2: #009c3b;
+}
+
+body {
+    background-color: var(--corDegrade1);
+}
