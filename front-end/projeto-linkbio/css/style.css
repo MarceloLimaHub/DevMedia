@@ -171,3 +171,23 @@
 .tabela th, tr, td {
     padding: 20px;
 }
+
+.tabela tbody td:nth-child(1) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tabela tbody tr:nth-of-type(odd) {
+    background-color: #ffffffcc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000;
+}
+
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #000000cc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
